@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BootStrap MenuBar</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	//tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+	//popover
+	$('[data-toggle="popover"]').popover();
+	 $(".btnload").click(function(){
+        $(this).button('loading');
+    });  
+	$(".btnreset").click(function(){
+        $(this).button("loading").delay(500).queue(function(){
+            $(this).button("reset");
+            $(this).dequeue();
+        }); 
+    }); 
+	$(".btncustom").click(function(){
+        $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('somestringvalue');
+            $(this).dequeue();
+        });        
+    });
+});
+</script>
+
+  </head>
+  <body style="margin-bottom:100px;">
+	<div class="container">
+		<nav class="navbar navbar-default" style="margin-top:60px;">
+			<div class="container-fluid">
+			<div>
+			  <ul class="nav navbar-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a></li>
+				<li class="active"><a href="#">Page 2</a></li> 
+				<li><a href="#">Page 3</a></li> 
+			  </ul>
+			</div>
+			</div>
+		 </nav>
+<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			<div>
+			  <ul class="nav navbar-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a></li>
+				<li class="active"><a href="#">Page 2</a></li> 
+				<li><a href="#">Page 3</a></li> 
+			  </ul>
+			</div>
+			</div>
+		 </nav>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+			<div class="navbar-header pull-left">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			  </button>
+			</div>
+			<div class="collapse navbar-collapse" style="clear:both" id="mymenu">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a>
+				</li>
+				<li><a href="#">Page 2</a></li> 
+				<li><a href="#">Page 3</a></li> 
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				  <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header text-uppercase">Header</li>
+						<li><a href="#">Submenu 1-1</a></li>
+						<li class="divider"></li>
+						  <li class="disabled"><a href="#">Disabled</a></li>
+						  <li><a href="#">Submenu 1-2</a>
+						   </li>
+						  <li><a href="#">Submenu 1-3</a></li> 
+						</ul>
+					  </li>
+			  </ul>
+			</div>
+	</div>
+</nav>
+<pre>
+123
+456
+678
+678678
+6778
+45623e
+2
+23r
+
+123
+456
+678
+678678
+6778
+45623e
+2
+23r
+
+123
+456
+678
+678678
+6778
+45623e
+2
+23r
+
+123
+456
+678
+678678
+6778
+45623e
+2
+23r
+
+123
+456
+678
+678678
+6778
+45623e
+2
+23r
+
+123
+456
+678
+678678
+6778
+45623e
+2
+23r
+
+</pre>
+  </body>
+</html>

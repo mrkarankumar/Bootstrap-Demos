@@ -1,0 +1,237 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap MenuBar</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      //tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+      //popover
+      $('[data-toggle="popover"]').popover();
+      $(".btnload").click(function () {
+        $(this).button('loading');
+      });
+      $(".btnreset").click(function () {
+        $(this).button("loading").delay(500).queue(function () {
+          $(this).button("reset");
+          $(this).dequeue();
+        });
+      });
+      $(".btncustom").click(function () {
+        $(this).button('loading').delay(1000).queue(function () {
+          $(this).button('somestringvalue');
+          $(this).dequeue();
+        });
+      });
+    });
+  </script>
+
+</head>
+<b>
+
+  <body style="margin-bottom:200px;">
+
+
+    <div class="container">
+
+      <h2>karan</h2>
+
+      <div class="alert alert-success">
+
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+
+      </div>
+
+
+      <div class="alert alert-info">
+        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+      </div>
+
+
+      <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>warning!</strong> hello karan kumar chaudhary village shreeram pur distic bettiah
+        hello my name karan kumar
+      </div>
+
+      <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>danger!</strong> hello karan kumar chaudhary village shreeram pur distic bettiah
+        hello my name karan kumar
+      </div>
+
+
+      <p> hekkk <mark class="text-secondary">karan kumar chaudhARY <mark>hello karan kumar chaudhary</mark>
+
+      </p>
+
+      <h1>hello karan kumar chaudhary </h1>
+
+      <p>the karan kumar <abbr title="World Health Organization">w.h.o</abbr>was founded in 1948 </p>
+
+      <h1>Blockquotes</h1>
+
+      <Blockquotes>
+
+        <p>hello karan kumar chaudhary village shreerampur
+          distic west champaran . post bhitiharwa ashram </p>
+
+        <p>hello karan kumar chaudhary village shreerampur
+          distic west champaran . post bhitiharwa ashram </p>
+        <p>hello karan kumar chaudhary village shreerampur
+          distic west champaran . post bhitiharwa ashram </p>
+        <p>
+
+          hello karan kumar chaudhary village shreerampur post bhitiharwa ashram
+          hello karan kumar chaudhARY village shreerampur post bhitiharewa asram
+          hello karan kumar chaudhary village shreerampur post bhitiharwa ashram
+          hello karan kumar vhaudhary village shreerampur post bhitiharwa sahram
+          hello karan kumar chaudhary village shreerampur post bhitiharwa ashram
+          hello karan kumar chuadhary village shreeram pur post bhiti harwa ashram
+          hello karan kumar chaudhary village shreerampur post bhitiharwa ashram
+          hello karan kumar chaudhARY village shreerampur post bhitiharewa asram
+          hello karan kumar chaudhary village shreerampur post bhitiharwa ashram
+          hello karan kumar vhaudhary village shreerampur post bhitiharwa sahram
+          hello karan kumar chaudhary village shreerampur post bhitiharwa ashram
+          hello karan kumar chuadhary village shreeram pur post bhiti harwa ashram
+
+
+        </p>
+
+        <footer>hello karan kumar chaudhary
+          i am web development from css html
+
+
+        </footer>
+
+
+      </Blockquotes>
+
+
+      <h1>hello karan kumar chaudhary </h1>
+
+      <p><code>sapm</code>,<code>amin kumar</code>,<code>div</code></p>
+
+      <h1>happy birthday</h1>
+
+      <pre>
+hello my name is karan kumar chaudhary
+hello my name is karan kumar chaudhary
+hello my name is karan kumar chaudhary
+hello my name is karan kumar chaudhary 
+
+</pre>
+
+      <h2>hello my name is karan kumar chaudhary </h2>
+
+
+      <p class="bg-primary"> this is karan kumar chaudhay </p>
+      <p class="bg-success"> this is kARAN KUMAR CHAUDHARY </p>
+      <p class="bg-info"> this is karan kumar chaudhary </p>
+      <p class="bg-warning">this is karan kumar chaudhary</p>
+      <p class="bg-danger">this is karan kar chaudhary </p>
+
+      <!-- baground colar -->
+
+
+      <div class="Jumbotron">
+
+        <h1>hello my name is karan kumar chaudhaty
+          my village name is shreerampur
+          post bhitiharwa
+        </h1>
+
+        <p>hello my name is karan kumar chaudhary
+
+          hello karan kumar chaudhary
+
+
+        </p>
+
+      </div>
+
+
+      <div class="well">well basic my name is karan kumar chaudhary</div>
+      <h2>hello my name karan kumar chaudhary </h2>
+
+
+      <p>
+
+        <button type="button" class="btn btn-default">Deaful my name is karan kumar chaudry </button>
+        <button type="button" class="btn btn-primary">hello karan kumar chaudhary </button>
+        <button type="button" class="btn btn-success">successful</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-success">successful</button>
+        <button type="button" class="btn btn-danger">danger boy its amin</button>
+        <button type="button" class="btn btn-warning">warning boy iys amin</button>
+        <button type="button" class="btn btn-link">link boy my name amin</button>
+
+      </p>
+      <p><button type="button" class="btn btnload btn-info ">LOading button</button></p>
+
+      <p><button type="button" class="btn btnreset btn-info">Auto resset</button></p>
+
+<p> <button type="button" class="btn btncustom btn-warning" data-somestringvalue-text="Username Available" autocomplete="off"><span class="glyphicon glyphicon-user"></span>Check Userename Availability</button></p>
+
+<h2>button Sizes</h2>
+    </div>
+<button type="button" class="btn btn-success btn-lg">large </button>
+<button type="button" class="btn btn-primary btn-md">Medium</button>
+<button type="button" class="btn btn-primary btn-sm">small</button>
+<button type="button" class="btn btn-primary btn-xs">XSmall</button>
+<button type="button" class="btn btn-success btn-lg">Large</button>
+
+<h1>button States</h1>
+<button type="button" class="btn btn-primary">Primary Button</button>
+<button type="button" class="btn btn-primary active">Active Primary</button>
+<button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+
+<h2>button group</h2>
+<div class="btn-group">
+
+<button type="button" class="btn btn-primary">samsung</button>
+<button type="button" class="btn btn-primary">Apple</button>
+<button type="button" class="btn btn-primary">Sony</button>
+
+</div>
+
+<div class="col-md-12">
+  
+  </div>
+  <div class="col-md-3">
+  <img src="plex.jpeg" alt="">
+  </div>
+  <div class="col-md-3">
+
+  <img src="plex.jpeg" alt="">
+            
+            
+  </div>
+  <div class="col-md-3">
+
+  <img src="plex.jpeg" alt="">
+  </div>
+  <div class="col-md-3">
+
+  <img src="plex.jpeg" alt="">
+  </div>
+  
+</div>
+</div>
+
+<button type="button" class="btn btn-primary">samsung</button>
+<button type="button" class="btn btn-primary">Apple</button>
+<button type="button" class="btn btn-primary">Sony</button>
+
+
+
+
+  </body>
+
+</html>

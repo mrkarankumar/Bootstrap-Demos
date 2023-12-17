@@ -1,0 +1,526 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>website using bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	//tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+	//popover
+	$('[data-toggle="popover"]').popover();
+	 $(".btnload").click(function(){
+        $(this).button('loading');
+    });  
+	$(".btnreset").click(function(){
+        $(this).button("loading").delay(500).queue(function(){
+            $(this).button("reset");
+            $(this).dequeue();
+        }); 
+    }); 
+	$(".btncustom").click(function(){
+        $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('somestringvalue');
+            $(this).dequeue();
+        });        
+    });
+});
+</script>
+
+  <style>
+    .distance{
+      margin-left: 30px;
+    }
+    .img{
+      background-image: url(Greece.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height:100%;
+      width:100%;
+    }
+    .html{
+      padding: 50px;
+      font-size:80px;
+      color: black;
+      text-align: center;
+       margin-top:10%;
+       font-weight: bold;    
+    }
+  
+    .likht{
+     color:wheat;
+     font-size:40px;
+     margin-top:-12px;
+    }
+    .kalam{
+    color: black;
+    font-size:40px;  
+    }
+    .kahani{
+    font-size:20px;
+    }
+    .wadiya{
+    margin-top:10px;
+    float: left;  
+    }
+    .gangsign{
+      margin-top:80px;
+      float: left;
+      margin-left:-200px;
+    }
+    .first{
+    height:20px;
+    width:100px;  
+    }
+    .col-md-3{
+     height:200px; 
+    }
+    /* .kafe{
+      
+    } */
+    .yaar{
+     height: 300px;
+    }
+    .pic{
+    /* background-image:url("img/lake.jpg"); */
+    }
+    .pp{
+      margin-left: -15px;
+    }
+    .kafe{
+      margin-top:100px;
+      color:darkgray;
+    }
+    .goat{
+    font-size:15px;
+    text-align: center;
+    float: left;
+    margin-top:100px;
+    margin-left:260px;  
+    }
+    .jumbotron{
+      margin-top:300px;
+    }
+    .kidd{
+      font-size:10px;
+    }
+    .podcast{
+   height:100px;
+   width:200px; 
+   background-color: brown;
+   margin-top:300px;
+   padding-top:40px; 
+    }
+    .record{
+margin-top:40px;
+height:400px;
+background-image:url(img/lake.jpg);  
+}
+.bisleri{
+font-size:70px;
+color:darkgray;  
+margin-left:280px;
+margin-top:50px;
+}
+.hanji{
+ height:60px;
+ margin-left:320px;
+ float: left; 
+ font-weight: bold;
+ font-size:20px;
+}
+.hov{
+  margin-left:800px;
+   background-color: aqua;
+   border-color: aqua;
+   margin-top:-59px;
+   width: 110px;
+    height:60px;
+}
+.hover{
+  margin-left:10px;
+  color:darkgoldenrod;
+  background:transparent;
+  border-color:transparent;
+   margin-top:5px;
+   width: 110px;
+   height: 40px;
+}
+.artist{
+margin-top:55px;
+margin-left:20px;
+height:250px;
+width:350px;
+background-color: blueviolet;
+}
+.yes{
+margin-top:25px;
+float: left;
+font-size:25px;
+color: aliceblue;
+}
+.comment{
+margin-top:100px;
+margin-left:250px;
+font-size:20px;
+color: lightgray;
+}
+.Nation{
+margin-left:250px;
+margin-top:20px;
+font-weight: bold;  
+}
+.first{
+  height:400px;
+width:350px; 
+margin-top:40px;
+float: left; 
+margin-left:17px; 
+background-color:slategray; 
+}
+.AJJashan{
+font-weight: bold;
+margin-top:80px;
+margin-left:480px;
+float: left;
+font-size:30px;
+}
+.manaye{
+margin-top:150px;
+margin-left:250px;
+font-size:20px;
+color: lightgray;
+}
+.ailaan{
+  height:200px;
+  width:350px;
+}
+.second{
+ height:400px;
+width:350px; 
+margin-top:40px;
+float: left; 
+margin-left:24px; 
+background-color:slategray; 
+}
+.third{
+  
+  height:400px;
+width:350px; 
+margin-top:40px;
+float: left; 
+margin-left:24px; 
+background-color:slategray; 
+}
+.sath{
+font-size:20px;
+color: black;
+margin-left:95px;
+float: left;
+margin-top:20px;
+}
+.right{
+font-size:20px;
+color: black;
+margin-left:120px;
+float: left;
+margin-top:20px;
+}
+.believe{
+ margin-top:60px;
+margin-left:70px;
+font-size:17px;
+color: lightgray;
+}
+.ultrapromax{
+  margin-left:120px;
+  color:sandybrown;
+  background:transparent;
+  border-color:transparent;
+   margin-top:5px;
+   width: 110px;
+   height: 40px;
+}
+.young{
+margin-top:40px;
+height:220px;
+}
+.nava{
+height:150px;
+width:200px;
+background-color:aliceblue;
+margin-left:100px;
+float: left;
+margin-top:50px;  
+}
+.shounk{
+font-size:20px;
+font-weight: bold;  
+}
+.ik{
+color:grey;
+font-size:22px;
+}
+.tera{
+height:150px;
+width:200px;
+background-color:aliceblue;
+margin-left:50px;
+float: left;
+margin-top:50px;  
+}
+.lagya{
+font-size:25px;
+color:black;  
+}
+.pehla{
+font-size:20px;
+color:gray;  
+}
+.chaska{
+height:150px;
+width:200px;
+background-color:aliceblue;
+margin-left:50px;
+float: left;
+margin-top:50px;  
+}
+.si{
+font-size:25px;
+color:black;  
+}
+.carra{
+font-size:17px;
+color:gray;  
+}
+.da{
+height:150px;
+width:200px;
+background-color:aliceblue;
+margin-left:70px;
+float: left;
+margin-top:50px;  
+}
+.peak{
+font-size:25px;
+color: black;
+}
+.facebooki{
+height:40px;
+width:40px;
+}
+.instagram{
+height:40px;
+width:40px;
+}
+.twiiter{
+  height:40px;
+width:40px;
+}
+.linkin{
+  height:40px;
+  width:40px;
+}
+    
+  </style>
+<body>
+<div class="container img">
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: transparent;">
+        <div class="container-fluid" style="margin-left:600px;">
+          <div class="collapse navbar-collapse " id="myNavbar">
+            <ul class="nav navbar-nav">
+
+              <li class="active distance"><a href="#">Home</a></li>
+
+              <li><a href="#">Watch video</a></li>
+
+              <li class="dropdown distance"><a class="dropdown-toggle" data-toggle="dropdown">Demo Pages
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Creative Agency</a></li>
+                <li><a href="#">Travel Agency</a></li>
+                </ul>
+              </li>
+
+
+              
+              <li class="dropdown distance"><a class="dropdown-toggle" data-toggle="dropdown">Blocks
+                
+              <span class="caret"></span></a>
+            
+        <ul class="dropdown-menu">
+              <li><a href="#">Menu pages</a></li>
+              <li><a href="#">Headers</a></li>
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">images & Videos</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Pricings</a></li>
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">Call to actions</a></li>
+              <li><a href="#">Counters</a></li>
+              <li><a href="#">Maps & forms</a></li>
+              <li><a href="#">testimonials</a></li>
+              <li><a href="#">Clients & partners</a></li>
+              <li><a href="#">Accordions & Tabs</a></li>
+              </ul>
+              </li>
+            <div class="btn-group btn-group-lg ">
+            <button type="button" class="btn btn-primary" style="margin-left:10px; background-color: aqua;border-color: aqua; margin-top:5px;width: 110px; height: 40px;"> <span style="font-size: 16px;text-align: center;"> Buy Now</span></button>               
+            </div>
+            </div>
+        </div>
+      </nav>
+  <!-- NAVBAR -->
+
+<!-- BANNER -->
+    <div class="html">Travel with us 
+        <h4 class="likht">Explore the world in any direction</h4>
+    </div>
+    <div class="btn-group btn-group-lg">
+      <button type="button" style="background-color:snow;margin-left:440px; border:none;border-radius:4px; margin-top:-40px;width: 110px; height: 40px;float: left;">buy now</button>
+    <button type="button" style="background-color:transparent; color: aliceblue; margin-left:590px; border-color:white ;border-radius:4px ; margin-top:-40px;width: 120px; height: 40px;float:left;border-color: aliceblue;" >Ways to Travel</button>
+    </div>
+  </div> 
+<!-- BANNER -->
+
+  <div class="container">
+  <h4 class="kalam">Our Journal</h4>  
+  <p class="kahani">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex itaque laboriosam quam,</br>
+    consequuntur vero officiis molestias, inventore repellendus.</p>
+     <div class="row">
+    <div class="col-lg-4 " style="background-color:antiquewhite;">
+      <p class="kafe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary" style="margin-left:10px;color:saddlebrown;background:transparent;border-color:transparent; margin-top:5px;width: 110px; height: 40px;"> <span style="font-size: 16px;text-align: center;">Read more</span></button>      
+    </div>
+    <div class="col-lg-4 " style="background-color:lavenderblush;"> 
+      <div class="pic">
+        <img src="img/lake.jpg"  height="300px"  width="390px" class="pp" >
+      </div>
+    </div>
+    <div class="col-lg-4 " style="background-color:antiquewhite;"> 
+      <p class="kafe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary" style="margin-left:10px;color:saddlebrown;background:transparent;border-color:transparent; margin-top:5px;width: 110px; height: 40px;"> <span style="font-size: 16px;text-align: center;">Read more</span></button>         
+    </div>
+    <div class="col-lg-4" style="background-color:aquamarine;">      
+      <div class="pic">
+        <img src="img/luca mountain.jpg"  height="300px"  width="390px" class="pp" >
+      </div>
+    </div>
+  <div class="col-lg-4 " style="background-color:antiquewhite;"> 
+     <p class="kafe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>    
+        <button type="button" class="btn btn-primary" style="margin-left:10px;color:saddlebrown;background:transparent;border-color:transparent; margin-top:5px;width: 110px; height: 40px;"> <span style="font-size: 16px;text-align: center;">Read more</span></button>     
+   </div>
+    <div class="col-lg-4" style="background-color:crimson;"> 
+      <div class="pic">
+        <img src="img/sho-hatakeyama.jpg"  height="300px"  width="390px" class="pp" >
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+   <h2 class="goat"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quam et</br>
+     quasi, dignissimos culpa rerum non corporis neque fuga nihil?  Illo iure,nesciuntsunt </br>
+     vero tempora aspernatur iste, repudiandae? Molestias qui commodi, ut rerum recusandae,</br>
+      fugit cumque suscipit dolorem tenetur dolore, cupiditate voluptatibus. Mollitia </br>
+      dolorum, quae, doloribus,itaque dignissimos veritatis a amet aliquid cum veniam </br>
+      minus. Repudiandae, facilis, delectus?
+</h2>
+</div>
+<div class="container-fluid alert-danger record">
+<p class="bisleri">Do You Wanna Go ?</p>
+<form class="form-horizontal" role="form">
+<div class="col-sm-5 ">
+  <input type="email" class="form-control hanji" id="email" placeholder="Enter email">
+  <button type="button" class="btn btn-primary hov"><span style="font-size: 16px;text-align: center;">I want!</span></button>               
+</div>
+</form>
+</div>  
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 artist" style="background-color:steelblue;">
+        <p class="yes">Southern countries</p>   
+      <p class="kafe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn hover"> <span style="font-size: 16px;text-align: center;">Read more</span></button>      
+      </div>
+
+      <div class="col-lg-3 artist" style="background-color:firebrick;">
+        <p class="yes">Nordic countries</p>
+        <p class="kafe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>
+        <button type="button" class="btn hover"> <span style="font-size: 16px;text-align: center;">Read more</span></button>      
+      </div>
+      
+      <div class="col-lg-3 artist" style="background-color:darkolivegreen;">
+        <p class="yes">African countries</p>
+        <p class="kafe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>
+        <button type="button" class="btn hover"> <span style="font-size: 16px;text-align: center;">Read more</span></button>      
+      </div>
+</div>
+</div>
+<!-- comment -->
+<div class="container">
+  <p class="comment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facilis </br>
+                     expedita cum iste voluptate itaque doloribus molestias numquam natus</br> 
+                     voluptates, molestiae tempora praesentium ratione dicta laudantium,</br>
+                     excepturi voluptatibus, assumenda repellendus! 
+  </p>
+  <p class="Nation">National geographic </p> 
+</div>
+<!-- comment -->
+<!-- photodiv -->
+<div class="container">
+<p class="AJJashan">Read Our Blog</br></p>
+  <h4 class="manaye">Lorem Ipsum dolor sit amet, consectetur adipisicing elit. Officia officiis possimus<br>
+  tempore veniam iste hic qui corrupti explicabo at error totam.</h4>  
+<div class="first"><img class="ailaan" src="img/sho-hatakeyama.jpg"><k class="sath">African Savannah</k>
+  <p class="believe">Lorem Ipsum dolor sit amet,</br>consectetur adipisicing elit.Ab</br>cupiditate est eveniet.</p>
+  <button type="button" class="btn ultrapromax"> <span style="font-size: 16px;text-align: center;">Read more</span></button>      
+  </div>
+<div class="second"><img class="ailaan" src="img/lake.jpg"><k class="sath">Mediterranean sea</k> 
+  <p class="believe">Lorem Ipsum dolor sit amet,</br>consectetur adipisicing elit.Ab</br>cupiditate est eveniet.</p>
+  <button type="button" class="btn ultrapromax"> <span style="font-size: 16px;text-align: center;">Read more</span></button>      
+ </div>
+<div class="third"> <img class="ailaan"  src="img/luca mountain.jpg"><k class="right">Lorem Ipsum</k>
+  <p class="believe">Lorem Ipsum dolor sit amet,</br>consectetur adipisicing elit.Ab</br>cupiditate est eveniet.</p>
+  <button type="button" class="btn ultrapromax"> <span style="font-size: 16px;text-align: center;">Read more</span></button>      
+  </div>
+</div>
+<!-- photodiv -->
+<!-- .infodiv -->
+<div class="contaner-fluid young" style="background-color:aliceblue;">
+<div class="nava">
+<p class="shounk">Corporate HTML5 templates</p>
+<p class="ik">1234 Street Name
+  City, AA 99999</p>
+</div>
+<div class="tera">
+<p class="lagya"> Phone</p>
+ <p class="pehla"> Office :</br>
+  +1 (0) 000 0000 001</p>
+</div>
+<div class="chaska">
+<p class="si">Email</br></p>
+  <p class="carra">dhakkad5911@gmail.com</p>
+</div>
+<div class="da">
+<p class="peak">Social</p>
+<img class="facebooki" src="img/Facebook_Logo.png">
+<img class="instagram" src="img/instagram logo.webp">
+<img class="twiiter" src="img/twiiter.png">
+<img class="linkin" src="img/inlink.png">
+</div>
+</div>
+<!-- .infodiv -->
+<div class="container">
+  
+</div>
+</body>
+</html>

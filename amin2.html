@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+            //popover
+            $('[data-toggle="popover"]').popover();
+            $(".btnload").click(function () {
+                $(this).button('loading');
+            });
+            $(".btnreset").click(function () {
+                $(this).button("loading").delay(500).queue(function () {
+                    $(this).button("reset");
+                    $(this).dequeue();
+                });
+            });
+            $(".btncustom").click(function () {
+                $(this).button('loading').delay(1000).queue(function () {
+                    $(this).button('somestringvalue');
+                    $(this).dequeue();
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #ffffff !important;
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #240fc0 !important;
+        }
+
+        .col-md-3 a {
+
+            color: #240fc0;
+
+        }
+
+        .tt a {
+
+            color: gold;
+
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- ....image........ -->
+
+    <div class="container-fluid bg-3 text-center" style="
+    background: linear-gradient(145deg, rgb(218, 11, 56) 3%, rgb(250, 220, 237), rgb(37, 38, 56));
+    
+width: 100%; margin-top: 40px;height: 100%;">
+
+
+        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2015/12/logo1.png" alt=""
+            style="margin-top: 12px;">
+
+        <a class=" navbar  navbar-right"
+            style="margin-top: 55px;margin-right: 200px; font-size: 25px; padding-top: 5px; color: rgb(19, 6, 19); background-color: darkorange; width: 80px; height: 10px; border-radius: 15px 0 15px 0;"
+            href="#myPage">Login</a>
+
+        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/themes/inspirythemes-food-recipes/images/header-image.png"
+            alt="" style="width: 50%; margin-top: 0px;">
+
+    </div>
+
+
+    <!-- nav........................bar....... -->
+
+    <div class="container">
+        <nav class="navbar color navbar-inverse text-white navbar-fixed-top  container-fluid"
+            style="background-color: rgb(11, 13, 56);">
+            <div class="navbar-header pull-left">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" style="clear:both" id="mymenu">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-menu" style="background-color:rgb(11, 13, 56);" data-toggle="dropdown"
+                            href="#">MORERECIP
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background: #240fc0;">
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+
+                        <a class="dropdown-menu" style="background-color: rgb(11, 13, 56);" data-toggle="dropdown"
+                            href="#">Blocks
+
+                            <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu" style="background-color: #0e0d0d;">
+                            <li><a href="#">Menu pages</a></li>
+                            <li><a href="#">Headers</a></li>
+                            <li><a href="#">Feature</a></li>
+                            <li><a href="#">images & Videos</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">Pricings</a></li>
+                            <li><a href="#">Teams</a></li>
+                            <li><a href="#">Call to actions</a></li>
+                            <li><a href="#">Counters</a></li>
+                            <li><a href="#">Maps & forms</a></li>
+                            <li><a href="#">testimonials</a></li>
+                            <li><a href="#">Clients & partners</a></li>
+                            <li><a href="#">Accordions & Tabs</a></li>
+                        </ul>
+                    </li>
+
+                    <a href="#"><i class="fa-brands fa-facebook"
+                            style="margin-top: 20px; margin-left: 20px; color:darkorange; font-size: 20px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="font-size: 20px; color: darkorange;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="font-size: 20px; color: darkorange;"></i></a>
+
+
+
+            </div>
+        </nav>
+        <!-- //icon -bar...close..... -->
+
+        <div class="container">
+            <br><br>
+
+            <h1 class="h" style="margin-top: -5px; font-size: 30px;">SearchRecip</h1>
+
+            <br>
+            <div class="row">
+
+                <div class="col-md-3">
+
+                    <input type="text" value="" name="s" id="s"
+                        style="border: 2px solid rgb(23, 23, 25); border-radius: 25px; width: 300px; height: 40px;" f>
+
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"
+                            style="font-size: 40px; color: #f4511e;margin-left: 120px;margin-top: 3px;background-color: #949398; border-radius: 5px; width: 50px; padding-left: 5px;"></i></a>
+
+                </div>
+
+                <div class="col-md-3" style="margin-top: -18px; ">
+
+                    <h1 style="margin-top: 25px; font-size: 32px;">Recipe Types:</h1>
+
+
+                </div>
+
+                <div class="col-md-3" style="font-size: 23px; color: #240fc0; margin-top: 6px;">
+
+                    <a href="#">Chicken,Chocolate,pizzas</a></>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="container" style="margin-left: -15px;font-style:italic; font-size: 15px;">
+
+                <h1 class="hh" style="font-size: 25px;margin-top: 8px;">Top Recipes of the day</h1>
+
+                <p>
+                    Sliding recipes are much more tasty as food than sliding images. :D</p>
+
+
+            </div>
+
+
+            <div class="container">
+
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/image1/aminr.png" alt="Chania" width="100%"
+                                style="margin-left: 0px; margin-right: 00px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/image1/amin2.png" alt="Chania" width="100%" style="margin-left: 00px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/image1/aminr.png" alt="Flower" width="100%" style="margin-left: 00px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/image1/aminr.png" alt="Flower" width="100%">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!-- ...........first div............picture....... -->
+
+            <div class="container-fluid bg-3 text-center">
+
+                <h3 class="h3" style="color: #c00fa3;">What's<span class="hoy" style="color: black;">Hot</span></h3>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-3" style="border: 1px solid rgb(237, 237, 253);">
+
+                        <p class="chlo" style="color: rgb(19, 6, 19); font-size: 25px;">Chocolate...</p>
+
+                        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2013/03/ChoclateEarl-300x195.jpg"
+                            class="img-responsive" style="width:100%" alt="Image">
+
+                        <a href="#">Chocolate Earl Grey Pots...</a>
+
+                        <p class="pri" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Et consequuntur facere iste repellendus
+                            nesciunt laborum qui ratione officiis. Mollitia impedit non neque obcaecati. Illo sint
+                            provident
+                            accusantium animi nesciunt maxime....</p>
+
+                    </div>
+                    <div class="col-sm-3" style="border: 1px solid rgb(237, 237, 253);">
+
+                        <p class="pi" style="color: rgb(19, 6, 19); font-size: 25px;">Pizzas...</p>
+
+                        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2013/02/pastopizza-thumb-222x144.jpg"
+                            class="img-responsive" style="width:100%" alt="Image">
+
+                        <a href="#">Pesto Pizza With Roasted...</a>
+
+                        <p class="pri" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Et consequuntur facere iste repellendus
+                            nesciunt laborum qui ratione officiis. Mollitia impedit non neque obcaecati. Illo sint
+                            provident
+                            accusantium animi nesciunt maxime.... </p>
+
+                    </div>
+                    <div class="col-sm-3" style="border: 1px solid rgb(237, 237, 253);">
+
+                        <p class="rol" style="color:rgb(19, 6, 19); font-size: 25px;">Rolls...</p>
+
+                        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2012/08/Goat-Cheese-Chorizo-Rolls21-222x144.jpg"
+                            class="img-responsive" style="width:100%" alt="Image">
+
+                        <a href="#">Goat Cheese and Chorizo...</a>
+
+                        <p class="pri" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Et consequuntur facere iste repellendus
+                            nesciunt laborum qui ratione officiis. Mollitia impedit non neque obcaecati. Illo sint
+                            provident
+                            accusantium animi nesciunt maxime....</p>
+
+                    </div>
+
+                    <div class="col-sm-3" style="border: 1px solid rgb(237, 237, 253);">
+
+                        <p class="chi" style="color: rgb(19, 6, 19); font-size: 25px;">Chicken...</p>
+
+                        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2013/02/pastopizza-thumb-222x144.jpg"
+                            class="img-responsive" style="width:100%" alt="Image">
+
+                        <a href="#">Vietnamese Style Grilled Five...</a>
+
+                        <p class="pri" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Et consequuntur facere iste repellendus
+                            nesciunt laborum qui ratione officiis. Mollitia impedit non neque obcaecati. Illo sint
+                            provident
+                            accusantium animi nesciunt maxime....</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <br><br>
+
+            <!-- ........secind  div picture............. -->
+
+            <div class="container-fluid bg-3 text-center">
+
+                <div class="row">
+
+                    <div class="col-sm-4"
+                        style="border: 1px solid rgb(237, 237, 253); border-radius: 20px 0px 20px 0px; ">
+
+
+                        <p class="chlo" style="color: rgb(19, 6, 19); font-size: 30px;">Weekly Special</p>
+
+                        <br>
+                        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2013/03/ChoclateEarl-300x195.jpg"
+                            class="img-responsive" style="width:100%" alt="Image">
+
+                        <br>
+
+                        <p class="vv" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Sit eligendi tempora suscipit maxime
+                            ipsum omnis, vel .
+                        </p>
+
+                        <br>
+
+                        <button type="button" class="btn btn-success">read more</button>
+
+                        <br>
+                        <br>
+
+
+                    </div>
+
+                    <div class="col-sm-4" style="border: 1px solid rgb(237, 237, 253); ">
+
+                        <p class="chlo" style="color: rgb(19, 6, 19);font-size: 30px;">News and Events</p>
+
+                        <br>
+
+                        <a href="#" style="color: #240fc0; font-size: 20px;">Best Bread pairing for Barbeque?</a>
+
+
+                        <p class="tei" style="text-align: justify;">Quis sed mid elit, risus aliquet placerat. Pid et,
+                            vel
+                            phasellus augue... more,Quis sed mid elit, risus aliquet placerat. Pid et, vel
+                            phasellus augue... more,Quis sed mid elit, risus aliquet placerat. Pid et, vel
+                            phasellus augue... more,risus aliquet placerat. Pid et, vel
+                            phasellus augue... more,Quis sed mid elit, risus aliquet placerat. Pid et, vel
+                            phasellus augue... more</p>
+
+
+                        <a href="#" style="color: #240fc0; font-size: 16px;">Baking Question</a>
+                        <p class="rr" style="text-align: justify;">Quis sed mid elit, risus aliquet placerat. Pid et,
+                            vel
+                            phasellus augue... more,Quis sed mid elit, risus aliquet placerat. Pid et, vel
+                            phasellus augue... more,Quis sed mid elit, risus aliquet placerat. Pid et, vel
+                            phasellus a karan</p>
+
+                        <br>
+
+                        <button type="button" class="btn btn-success">read more</button>
+
+
+                    </div>
+
+
+                    <div class="col-sm-4"
+                        style="border: 1px solid rgb(237, 237, 253); border-radius: 0px 20px 0px 20px; ">
+
+
+                        <p class="chlo" style="color: rgb(19, 6, 19); font-size: 30px;">MISC Recipes</p>
+
+                        <br>
+
+
+                        <a href="#" style="color: #240fc0; font-size: 20px;">Best Bread pairing for Barbeque?</a>
+                        <p class="tei" style="text-align: justify;">Quis sed mid elit, risus aliquet placerat. Pid et,
+                            vel
+                            phasellus augue... more</p>
+
+
+                        <img src="img/aajj.png" class="img-responsive" style="width:100%; height: 48vh;" alt="Image">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- ......small.......baground...... -->
+
+            <div class="container-fluid bg-3 text-center"
+                style="background-color: #ffffff; width: 100%;height: 8vh; border: 5px solid rgb(226, 226, 221);">
+                <p class="zz" style="margin-top: 12px; color: rgb(19, 15, 15);">my name karan kumar ......</p>
+
+
+            </div>
+
+            <!-- .............baground div............. -->
+            <br>
+            <div class="container-fluid bg-3 text-center" style="background-color:black; width: 100%; height:100%;">
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+
+                        <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2015/12/logo1.png"
+                            alt="" style="margin-top: 20px;">
+
+                        <br><br>
+                        <p class="alu" style="text-align: justify;">Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore
+                            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores et
+                            ea
+                            rebum....</p>
+
+                        <br><br>
+                        <button type="button" class="btn btn-success">read more</button>
+
+
+                    </div>
+
+
+                    <div class="col-sm-4">
+
+
+                        <h1 class="jj" style="color: #c00f97;">Recent<span class="ooo" style="color: #240fc0;">
+                                Recipes</span></h1>
+
+                        <img src="https://png.pngtree.com/background/20230519/original/pngtree-fried-chicken-wings-on-a-black-plate-picture-image_2662983.jpg"
+                            alt="" style="width: 100%; height: 20vh;">
+
+                        <br><br><br>
+
+                        <button type="button" class="btn btn-success">Chiken Chli</button>
+
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        <h1 class="rr" style="color: #c00fa3;">Recent<span class="ttt" style="color: #240fc0;">
+                                Tweets</span></h1>
+
+                        <p>
+                            over a year ago</p>
+
+                        <img src="img/image1/linked.jpg" alt="" class="amin"
+                            style="width: 130px; height: 150px; border-radius: 50%; border: 3px solid blue">
+
+                        <h3 class="res" style="color: rgb(255, 0, 144);">karan kumar chaudhary<span class="uu"
+                                style="color: rgb(218, 32, 32);"></span></h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid bg-3 text-center"
+                style="background-color:rgb(37, 38, 56); width: 100%; height: 60px; border: 1px solid black;">
+                <p class="uu" style="margin-top: 20px; color: white;">"Copyright © 2020. Food Recipes - A Premium
+                    Wordpress Theme"</p>
+
+            </div>
+
+</body>
+
+
+</html>

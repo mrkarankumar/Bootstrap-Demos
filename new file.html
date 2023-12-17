@@ -1,0 +1,101 @@
+<html>
+  <head></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>webpage</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	//tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+	//popover
+	$('[data-toggle="popover"]').popover();
+	 $(".btnload").click(function(){
+        $(this).button('loading');
+    });  
+	$(".btnreset").click(function(){
+        $(this).button("loading").delay(500).queue(function(){
+            $(this).button("reset");
+            $(this).dequeue();
+        }); 
+    }); 
+	$(".btncustom").click(function(){
+        $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('somestringvalue');
+            $(this).dequeue();
+        });        
+    });
+});
+</script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .pic{
+            background-image:url(Greece.jpg);
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <nav class="navbar color navbar-inverse text-white navbar-fixed-top  container-fluid">
+            <div class="navbar-header pull-left">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+              </button>
+            </div>
+              <div class="collapse navbar-collapse" style="clear:both" id="mymenu">
+                <ul class="nav navbar-nav">
+                  <li class="active distance color2"><a href="#">Home</a></li>
+          
+                  <li><a href="#">Watch video</a></li>
+          
+                  <li class="dropdown distance"><a class="dropdown-toggle" data-toggle="dropdown">Demo Pages
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Creative Agency</a></li>
+                    <li><a href="#">Travel Agency</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown distance"><a class="dropdown-toggle" data-toggle="dropdown">Blocks
+                    
+                  <span class="caret"></span></a>
+                
+            <ul class="dropdown-menu">
+                  <li><a href="#">Menu pages</a></li>
+                  <li><a href="#">Headers</a></li>
+                  <li><a href="#">Feature</a></li>
+                  <li><a href="#">images & Videos</a></li>
+                  <li><a href="#">Articles</a></li>
+                  <li><a href="#">Pricings</a></li>
+                  <li><a href="#">Teams</a></li>
+                  <li><a href="#">Call to actions</a></li>
+                  <li><a href="#">Counters</a></li>
+                  <li><a href="#">Maps & forms</a></li>
+                  <li><a href="#">testimonials</a></li>
+                  <li><a href="#">Clients & partners</a></li>
+                  <li><a href="#">Accordions & Tabs</a></li>
+                  </ul>
+                  </li>
+                <div class="btn-group btn-group-lg ">
+                <button type="button" class="btn btn-primary" style="margin-left:10px; background-color: aqua;border-color: aqua; margin-top:5px;width: 110px; height: 40px;"> <span style="font-size: 16px;text-align: center;"> Buy Now</span></button>               
+                </div>
+                </nav>
+    </div>
+        <div class="pic"></div>
+    </div>
+</body>
+</html>

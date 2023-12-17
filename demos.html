@@ -1,0 +1,813 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap MenuBar</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      //tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+      //popover
+      $('[data-toggle="popover"]').popover();
+      $(".btnload").click(function () {
+        $(this).button('loading');
+      });
+      $(".btnreset").click(function () {
+        $(this).button("loading").delay(500).queue(function () {
+          $(this).button("reset");
+          $(this).dequeue();
+        });
+      });
+      $(".btncustom").click(function () {
+        $(this).button('loading').delay(1000).queue(function () {
+          $(this).button('somestringvalue');
+          $(this).dequeue();
+        });
+      });
+    });
+  </script>
+
+</head>
+
+<body style="margin-bottom:100px;">
+
+  <div class="container">
+    <h2>Alerts</h2>
+    <div class="alert alert-success">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+      <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+    </div>
+
+    <div class="alert alert-info">
+      <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+      <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+    </div>
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+      <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+    </div>
+    <div class="alert alert-danger">
+      <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+      <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+    </div>
+    <!-- mark -->
+    <p>Use the mark element to <mark class="text-secondary">highlight</mark> text. <mark>hello</mark></p>
+    <!-- mark -->
+    <!-- Abbr -->
+    <h1>Abbreviations</h1>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <!-- Abbr -->
+    <!-- blockquote -->
+    <h1>Blockquotes</h1>
+    <blockquote>
+      <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
+        works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+        globally.</p>
+      <footer>From WWF's website</footer>
+    </blockquote>
+    <!-- blockquote -->
+    <!-- blockquote reverse-->
+    <h1>Blockquotes reverse</h1>
+    <blockquote class="blockquote-reverse">
+      <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
+        works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+        globally.</p>
+      <footer>From WWF's website</footer>
+    </blockquote>
+    <!-- blockquote reverse-->
+    <!-- Code-->
+    <h1>Code Snippets</h1>
+    <p><code>span</code>, <code>section</code>, <code>div</code></p>
+    <!-- Code-->
+    <!-- pre -->
+    <h1>Multiple Code Lines</h1>
+    <pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+    <!-- pre -->
+    <!-- background colors -->
+    <h2>Contextual Backgrounds</h2>
+    <p>Use the contextual background classes to provide "meaning through colors":</p>
+    <p class="bg-primary">This text is important.</p>
+    <p class="bg-success">This text indicates success.</p>
+    <p class="bg-info">This text represents some information.</p>
+    <p class="bg-warning">This text represents a warning.</p>
+    <p class="bg-danger">This text represents danger.</p>
+    <!-- background colors -->
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1>Bootstrap Tutorial</h1>
+      <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+        mobile-first projects on the web.</p>
+    </div>
+    <!-- Jumbotron -->
+    <!-- well -->
+    <h2>Well</h2>
+    <div class="well">Basic Well</div>
+    <!-- well -->
+    <!-- buttons -->
+    <h2>Button Styles</h2>
+    <p>
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </p>
+    <p>
+      <button type="button" class="btn btnload btn-info">Loading Button</button>
+    </p>
+    <p>
+      <button type="button" class="btn btnreset btn-info">Auto Reset</button>
+    </p>
+    <p>
+      <button type="button" class="btn btncustom btn-warning" data-somestringvalue-text="Username Available"
+        autocomplete="off"><span class="glyphicon glyphicon-user"></span> Check Userename Availability
+      </button>
+    </p>
+    <h2>Button Sizes</h2>
+    <button type="button" class="btn btn-success btn-lg">Large</button>
+    <button type="button" class="btn btn-primary btn-md">Medium</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+    <h2>Button States</h2>
+    <button type="button" class="btn btn-primary">Primary Button</button>
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+    <h2>Button Group</h2>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h2>Button Group Large</h2>
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h2>Button Group Vertical</h2>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h2>Button Groups & Drop Down Menus</h2>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Sony <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Tablet</a></li>
+          <li><a href="#">Smartphone</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- buttons -->
+    <!-- Glyphcon  -->
+    <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+    <p>Envelope icon as a link:
+      <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+    </p>
+    <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+    <p>Search icon on a button:
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </p>
+    <p>Search icon on a styled button:
+      <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </p>
+    <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>
+    <p>Print icon on a styled link button:
+      <a href="#" class="btn btn-danger btn-sm">
+        <span class="glyphicon glyphicon-check"></span> Print
+      </a>
+    </p>
+    <p>
+      <a href="#" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-pencil"></span> Print
+      </a>
+    </p>
+    <!-- Glyphcon  -->
+    <!-- Badges  -->
+    <h2>Badges</h2>
+    <p><a href="#">News <span class="badge">5</span></a></p>
+    <p><a href="#">Comments <span class="badge">10</span></a></p>
+    <p><a href="#">Updates <span class="badge">2</span></a></p>
+    <p><button type="button" class="btn btn-primary">Primary <span class="badge">7</span></button></p>
+    <h1>Example <span class="label label-default">New</span></h1>
+    <h2>Example <span class="label label-default">New</span></h2>
+    <h3>Example <span class="label label-default">New</span></h3>
+    <h4>Example <span class="label label-default">New</span></h4>
+    <h5>Example <span class="label label-default">New</span></h5>
+    <h6>Example <span class="label label-default">New</span></h6>
+    <p>
+    <p><span class="label label-default">Default Label</span></p>
+    <p><span class="label label-primary">Primary Label</span></p>
+    <p><span class="label label-success">Success Label</span></p>
+    <p><span class="label label-info">Info Label</span></p>
+    <p><span class="label label-warning">Warning Label</span></p>
+    <p><span class="label label-danger">Danger Label</span> </p>
+    </p>
+    <!-- Badges  -->
+    <!-- progress bar  -->
+    <h2>Progress Bar</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:40%">
+        40% Complete (success)
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100" style="width:50%">
+        50% Complete (info)
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+        aria-valuemax="100" style="width:60%">
+        60% Complete (warning)
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+        aria-valuemax="100" style="width:70%">
+        70% Complete (danger)
+      </div>
+    </div>
+    <h2>Progess Bar Stripped</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40% Complete (success)
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50"
+        aria-valuemin="0" aria-valuemax="100" style="width:50%">
+        50% Complete (info)
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60"
+        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        60% Complete (warning)
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70"
+        aria-valuemin="0" aria-valuemax="100" style="width:99%">
+        99% Complete (danger)
+      </div>
+    </div>
+    <!-- progress bar  -->
+    <!-- progress bar  Active-->
+    <h2>Progress Bar Active</h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:40%">
+        40%
+      </div>
+    </div>
+    <!-- progress bar  Active-->
+    <!-- Basic Pagination-->
+    <h2>Basic Pagination</h2>
+    <ul class="pagination">
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+    <h2>Active State</h2>
+    <ul class="pagination">
+      <li><a href="#">1</a></li>
+      <li class="active"><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+    <h2>Disabled State</h2>
+    <ul class="pagination">
+      <li><a href="#">1</a></li>
+      <li class="disabled"><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+    <h2>Pagination Small</h2>
+    <ul class="pagination pagination-sm">
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+    <h2>Pager</h2>
+    <ul class="pager">
+      <li><a href="#">Previous</a></li>
+      <li><a href="#">Next</a></li>
+    </ul>
+    <ul class="pager">
+      <li class="previous"><a href="#">Previous</a></li>
+      <li class="next"><a href="#">Next</a></li>
+    </ul>
+    <!-- Basic Pagination-->
+    <!-- Panels-->
+    <h2>Panels with Contextual Classes</h2>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Panel with panel-default class</div>
+        <div class="panel-body">Panel Content</div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">Panel with panel-primary class</div>
+        <div class="panel-body">Panel Content</div>
+      </div>
+
+      <div class="panel panel-success">
+        <div class="panel-heading">Panel with panel-success class</div>
+        <div class="panel-body">Panel Content</div>
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">Panel with panel-info class</div>
+        <div class="panel-body">Panel Content</div>
+      </div>
+
+      <div class="panel panel-warning">
+        <div class="panel-heading">Panel with panel-warning class</div>
+        <div class="panel-body">Panel Content</div>
+      </div>
+
+      <div class="panel panel-danger">
+        <div class="panel-heading">Panel with panel-danger class</div>
+        <div class="panel-body">Panel Content</div>
+      </div>
+    </div>
+    <!-- Panels-->
+    <!-- Basic Dropdowmns-->
+    <h2>Dropdowns</h2>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+    <!-- Basic Dropdowmns-->
+    <!-- Basic menus-->
+    <h2>Menus</h2>
+    <ul class="list-inline">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+    <!-- Basic menus-->
+    <!-- Navigation-->
+    <h2>Navigation</h2>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h2>Navigation Inverted</h2>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h2>Navigation fixed collapse with dropdown</h2>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation-->
+    <!-- Basic Form -->
+    <h2>Basic Forms</h2>
+    <form role="form">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <h2>Inline Forms</h2>
+    <form class="form-inline" role="form">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <h2>Horizontal Forms</h2>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password:</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+          <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+          <label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </form>
+    <h2>Forms Input Sizing</h2>
+    <form class="form-inline" role="form">
+      <div class="form-group input-group">
+        <span class="input-group-addon glyphicon glyphicon-user"></span>
+        <input class="form-control" id="inputdefault" type="text">
+      </div>
+      <div class="form-group input-group">
+        <label for="inputlg">input-lg</label>
+        <input class="form-control input-lg" id="inputlg" type="text">
+      </div>
+      <div class="form-group">
+        <label for="inputsm">input-sm</label>
+        <input class="form-control input-sm" id="inputsm" type="text">
+      </div>
+    </form>
+    <!-- Forms -->
+    <!-- Caruosel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/ahoniaho.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="img/bewakoof.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="img/airbus.webp" alt="Flower">
+        </div>
+
+        <div class="item">
+          <img src="img/business.jpg" alt="Flower">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Caruosel -->
+    <!-- Model -->
+    <h2>Model Dialog</h2>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal
+      Small</button>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Open Modal
+      Large</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="myModal1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Model -->
+    <!-- tooltip -->
+    <h2>Tooltip</h2>
+    <p><a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a></p>
+    <h2>Tooltip Position</h2>
+    <ul class="list-inline">
+      <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+    </ul>
+    <!-- tooltip -->
+    <!-- Popover -->
+    <h2>Popover</h2>
+    <p><a data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+    </p>
+    <h2>Popover Position</h2>
+    <p><a title="Header" data-toggle="popover" data-placement="top" data-content="Content">Popover top</a></p>
+    <p><a title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Popover Bottom</a></p>
+    <p><a title="Header" data-toggle="popover" data-placement="left" data-content="Content">Popover Left</a></p>
+    <p><a title="Header" data-toggle="popover" data-placement="right" data-content="Content">Popover Right</a></p>
+    <h2>Popover Closing</h2>
+    <p><a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus"
+        data-content="Click anywhere in the document to close this popover">Click me</a></p>
+    <h2>Popover Hover</h2>
+    <p><a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Some content">Hover
+        over me</a></p>
+    <!-- Popover -->
+    <!-- Grids -->
+    <div class="container">
+      <h1>Bootstrap Grid Example: Stacked-to-horizontal</h1>
+      <div class="row">
+        <div class="col-sm-6" style="background-color:lavender;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="col-sm-6" style="background-color:lavenderblush;">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <h1>Fluid container</h1>
+      <div class="row">
+        <div class="col-sm-6" style="background-color:lavender;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="col-sm-6" style="background-color:lavenderblush;">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+    </div>
+    <h2>Small Devices</h2>
+    <div class="container-fluid">
+      <h1>Hello World!</h1>
+      <div class="row">
+        <div class="col-sm-3 col-md-6" style="background-color:lavender;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
+          <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="col-sm-9 col-md-6" style="background-color:lavenderblush;">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Grids -->
+  </div>
+  <br>
+  <!-- Bootstrap Adding A Jumbotron -->
+  <div class="container">
+    <div class="jumbotron">
+      <h1>My first Bootstrap website!</h1>
+      <p>This page will grow as we add more and more components from Bootstrap...</p>
+      <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-print"></span> Print
+      </button>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-3" style="background-color:lavender;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col-md-6" style="background-color:lavenderblush;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col-md-3" style="background-color:lavender;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Adding A Jumbotron -->
+  <!-- Pills -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <div class="col-md-3">
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="col-md-3">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam.</p>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header text-uppercase">Header</li>
+              <li><a href="#">Submenu 1-1</a></li>
+              <li class="divider"></li>
+              <li class="disabled"><a href="#">Disabled</a></li>
+              <li><a href="#">Submenu 1-2</a></li>
+              <li><a href="#">Submenu 1-3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>
+      <div class="clearfix visible-lg"></div>
+    </div>
+  </div>
+  <!-- Pills -->
+  <!-- Breadcrumb -->
+  <div class="container">
+    <h2>Breadcumbs</h2>
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Private</a></li>
+      <li><a href="#">Pictures</a></li>
+      <li class="active">Vacation</li>
+    </ol>
+  </div>
+  <!-- Breadcrumb -->
+  <!-- Accordion -->
+  <div class="container">
+    <h2>Collapse</h2>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Accordion -->
+</body>
+
+</html>

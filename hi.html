@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	//tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+	//popover
+	$('[data-toggle="popover"]').popover();
+	 $(".btnload").click(function(){
+        $(this).button('loading');
+    });  
+	$(".btnreset").click(function(){
+        $(this).button("loading").delay(500).queue(function(){
+            $(this).button("reset");
+            $(this).dequeue();
+        }); 
+    }); 
+	$(".btncustom").click(function(){
+        $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('somestringvalue');
+            $(this).dequeue();
+        });        
+    });
+});
+</script>
+
+
+
+</head>
+<body>
+
+  
+  <style>
+   
+    .h{
+
+
+      margin-left: 30px;
+    }
+#s{
+
+background-color: rgb(225, 239, 239);
+margin-left: 30px;
+height: 40px;
+border: none;
+border-radius: 20px;
+box-shadow: 0 10px  10px;
+width: 250px;
+}
+
+    .icon-bar {
+      margin-left: 200px;
+
+      margin-top: 15px;
+      color: blue;
+      padding: 4px;
+      font-size: 25px;
+
+
+    }
+.icon3{
+  height: 51px;
+    width: 42px;
+    font-size: 40px;
+    margin-top: -42px;
+    color: #aec0c0;
+    background-color: #c7b6c6;
+    margin-left: 300px;
+    border-radius: 10px;}
+
+
+
+
+.fireRed{
+
+  margin-left: 31px;
+    color: cyn;
+    color: cyan;
+    position: absolute;
+
+
+}
+a{
+color:gold;
+
+
+}
+
+.chiken a{
+  font-size: 35px;
+    position: absolute;
+    margin-left: 327px;
+    margin-top: -50px;
+    color: rgb(48, 33, 164);
+
+}
+
+.top{
+
+  position: absolute;
+    margin-left: -265px;
+    margin-top: 30px;
+    color: blue;
+
+}
+
+
+
+
+.ppp{
+
+  position: absolute;
+    font-size: 30px;
+    color: rgb(255, 0, 208);
+    margin-top: 99px;
+    margin-left: -255px;
+
+}
+
+
+  </style>
+
+
+</head>
+
+<body>
+  <img src="https://foodrecipes.inspirythemes.com/bootstrap/wp-content/uploads/sites/3/2015/12/logo1.png" alt=""
+    class="img">
+  <br><br><br>
+
+  <nav class="navbar" style="background-color: rgb(103, 104, 104);">
+      <div class=" container-fluid" style="margin-left:00px;">
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav">
+
+        <li class="active distance"><a href="#">Home</a></li>
+        <li class="active distance"><a href="#">about</a></li>
+        <li class="active distance"><a href="#">skill</a></li>
+        <li class="active distance"><a href="#">contact</a></li>
+        <li class="active distance"><a href="#">Home</a></li>
+        <li class="active distance"><a href="#">about</a></li>
+        <li class="active distance"><a href="#">skill</a></li>
+        <li class="active distance"><a href="#">contact</a></li>
+
+        <li><a href="#">Watch video</a></li>
+
+        <li class="dropdown distance"><a class="dropdown-toggle" data-toggle="dropdown">Demo Pages
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Creative Agency</a></li>
+            <li><a href="#">Travel Agency</a></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown distance"><a class="dropdown-toggle" data-toggle="dropdown">Blocks
+
+            <span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu pages</a></li>
+            <li><a href="#">Headers</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">images & Videos</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Pricings</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Call to actions</a></li>
+            <li><a href="#">Counters</a></li>
+            <li><a href="#">Maps & forms</a></li>
+            <li><a href="#">testimonials</a></li>
+            <li><a href="#">Clients & partners</a></li>
+            <li><a href="#">Accordions & Tabs</a></li>
+          </ul>
+        </li>
+        <div class="btn-group btn-group-lg "> 
+          <button type="button" class="btn btn-primary"
+            style="margin-left:10px; background-color: rgb(0, 30, 255);border-color: rgb(0, 30, 255); margin-top:5px;width: 110px; height: 40px;">
+            <span style="font-size: 16px;text-align: center;"> Buy Now</span></button>
+          <div class="icon-bar">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+    </div>
+    </div>
+  </nav>
+<h1 class="h">search recip</h1>
+
+<input type="text" value="" name="s" id="s" f >
+<div class="icon3">
+  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+
+  <span class="fireRed">Recipe Types:</span>
+  <div class="chiken">
+<a href="#">Chicken,Chocolate,pizzas,patotos,Rolls</a></>
+</div>
+
+
+
+
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/strawberrywow.webp" alt="Chania" width="100%">
+      </div>
+  
+      <div class="item">
+        <img src="img/snow.jpg" alt="Chania" width="100%">
+      </div>
+  
+      <div class="item">
+        <img src="img/policeage.webp" alt="Flower" width="100%">
+      </div>
+  
+      <div class="item">
+        <img src="img/summerstar.jpg" alt="Flower" width="100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+</body>
+</html>
