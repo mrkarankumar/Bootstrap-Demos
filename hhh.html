@@ -13,27 +13,27 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      $(document).ready(function () {
-        //tooltip
-        $('[data-toggle="tooltip"]').tooltip();
-        //popover
-        $('[data-toggle="popover"]').popover();
-        $(".btnload").click(function () {
-          $(this).button('loading');
+        $(document).ready(function () {
+            //tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+            //popover
+            $('[data-toggle="popover"]').popover();
+            $(".btnload").click(function () {
+                $(this).button('loading');
+            });
+            $(".btnreset").click(function () {
+                $(this).button("loading").delay(500).queue(function () {
+                    $(this).button("reset");
+                    $(this).dequeue();
+                });
+            });
+            $(".btncustom").click(function () {
+                $(this).button('loading').delay(1000).queue(function () {
+                    $(this).button('somestringvalue');
+                    $(this).dequeue();
+                });
+            });
         });
-        $(".btnreset").click(function () {
-          $(this).button("loading").delay(500).queue(function () {
-            $(this).button("reset");
-            $(this).dequeue();
-          });
-        });
-        $(".btncustom").click(function () {
-          $(this).button('loading').delay(1000).queue(function () {
-            $(this).button('somestringvalue');
-            $(this).dequeue();
-          });
-        });
-      });
     </script>
 
 </head>
@@ -257,7 +257,8 @@
 
                 <a href="https://youtube.com/shorts/r9ZHukdCDOo?si=hCCQPpvwfv6B-ZMd" class="ankit2222"><i
                         class="fa-brands fa-react fa-spin"></i><span class="ttt">REACT</span></a>
-                <a href="https://www.w3schools.com/java/default.asp" class="ankit2222"><i class="fa-brands fa-java fa-flip"></i><span class="ttt">JAVA</span></a>
+                <a href="https://www.w3schools.com/java/default.asp" class="ankit2222"><i
+                        class="fa-brands fa-java fa-flip"></i><span class="ttt">JAVA</span></a>
                 <a href="#" class="ankit2222"><i class="fa-solid fa-code fa-flip"></i><span class="ttt">CSS</span></a>
                 <a href="#" class="ankit2222"><i class="fa-brands fa-bootstrap fa-flip"></i><span
                         class="ttt">BOOTSTRAP</span></a>
@@ -672,14 +673,14 @@
         <p class="bhagat">
             Gobindgarh(Punjab) <br>
             <br>
-    
-           <a href="https://ems.deshbhagatuniversity.in/" class="bhagat11">Desh bhagat university</a>
-           <br> <br>
 
-           <a href="#" class="bhagat11">amloh(road)/pin:147301</a>
-           <br><br>
-           <a href="#" class="bhagat11">distic:fathehgarhsahib</a>
-     
+            <a href="https://ems.deshbhagatuniversity.in/" class="bhagat11">Desh bhagat university</a>
+            <br> <br>
+
+            <a href="#" class="bhagat11">amloh(road)/pin:147301</a>
+            <br><br>
+            <a href="#" class="bhagat11">distic:fathehgarhsahib</a>
+
         </p>
         <div class="d1111">
 
